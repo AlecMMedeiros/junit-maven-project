@@ -24,4 +24,8 @@ public class Person {
     return (int) ChronoUnit.YEARS.between(this.birthDate, LocalDate.now());
   }
 
+  public boolean overEighteenAge(){
+    return this.getAge() >= 18;
+  }
+
 }
